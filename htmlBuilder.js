@@ -5,6 +5,7 @@ export function movieBanner(moviePerPage, page, ratedMovies, arrMovies) {
     movieBoxList.innerHTML = "";
     let startIndex = page * moviePerPage;
     console.log(startIndex);
+    console.log(arrMovies.length);
     for (
         let i = startIndex;
         i < moviePerPage + startIndex && i < arrMovies.length;
@@ -97,6 +98,8 @@ export function pagination(currentPage, moviePerPage, ratedMovies) {
     paginationContainer.innerHTML = "";
     let totalPages = Math.ceil(movieList.length / moviePerPage);
 
+    console.log(totalPages);
+
     let prev = document.createElement("span");
     prev.innerHTML = "&laquo;";
     prev.addEventListener("click", function () {
@@ -128,7 +131,7 @@ export function pagination(currentPage, moviePerPage, ratedMovies) {
     let next = document.createElement("span");
     next.innerHTML = "&raquo;";
     next.addEventListener("click", function () {
-        if (currentPage < totalPages) {
+        if (currentPage < totalPages - 1) {
             currentPage += 1;
             movieBanner(moviePerPage, currentPage, ratedMovies, movieList);
             pagination(currentPage, moviePerPage, ratedMovies);

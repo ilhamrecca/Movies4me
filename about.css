@@ -1,0 +1,145 @@
+body{
+    margin: 0;
+    padding: 0;
+    color: white;
+    background-color: #14252D;
+    border: 1px solid black;
+    box-sizing: border-box ; 
+    /* background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='49' viewBox='0 0 28 49'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='hexagons' fill='%23b4a5a5' fill-opacity='0.2' fill-rule='nonzero'%3E%3Cpath d='M13.99 9.25l13 7.5v15l-13 7.5L1 31.75v-15l12.99-7.5zM3 17.9v12.7l10.99 6.34 11-6.35V17.9l-11-6.34L3 17.9zM0 15l12.98-7.5V0h-2v6.35L0 12.69v2.3zm0 18.5L12.98 41v8h-2v-6.85L0 35.81v-2.3zM15 0v7.5L27.99 15H28v-2.31h-.01L17 6.35V0h-2zm0 49v-8l12.99-7.5H28v2.31h-.01L17 42.15V49h-2z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E"); */
+    /* width: 80%; */
+    font-family: "Varela Round", sans-serif;
+
+}
+header{
+    background-color: #8380ff;
+    position:sticky;
+    top:0px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    height: 100%;
+}
+
+nav ul a{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li{
+    display: flex;
+    align-items: center;
+    height: 100%;
+
+    margin: 0 25px;
+    padding: 0 20px;
+    font-size: 17px;
+    
+}
+
+nav ul li:hover{
+    transition: 0.2s ease-in;
+    background-color: #151515;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: calc(100vh - 60px);
+    justify-content: flex-start
+    
+}
+.banner{
+
+    display: flex;
+    align-items: center;
+    margin-top: 10%;
+    width: 80%;
+}
+
+.banner img{
+    width: 60%;
+}
+
+.banner p{
+    font-size: 20px;
+}
+.section {
+    display: flex;
+}
+.how-it-works {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+}
+
+.how-it-works h3 {
+    font-size: 1rem;
+}
+
+.how-it-works h1 {
+    font-size: 2rem;
+    margin-bottom: 2em;
+}
+
+.how-to-cards {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+}
+
+.step-cards {
+    margin: 2em 1em;
+
+    width: 25%;
+}
+
+
+.step-cards h5 {
+    font-size: 0.8rem;
+}
+
+.step-cards p {
+    font: 0.5rem;
+}
+
+button{
+    cursor: pointer;
+    padding: 0.8em 1.5em;
+    border: cornflowerblue;
+    background-color: #8380ff;
+    border-radius: 8px;
+    font-weight: bold;
+    color: whitesmoke;
+    transition: background-color 300ms ease-in;
+}
+button:hover {
+    background-color: #14252D;
+
+}
+
+.footer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #8380ff ;
+}
